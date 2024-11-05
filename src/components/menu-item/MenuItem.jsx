@@ -2,8 +2,6 @@ import "./menu-item.scss"
 
 const MenuItem = (props) => {
     const { title, imageUrl } = props.category;
-    console.log("imageUrl ", imageUrl);
-    // console.log("props.category ", props.category);
     return (
         <div className="menu-item">
             <div className="background-image"

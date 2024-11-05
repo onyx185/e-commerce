@@ -1,8 +1,9 @@
-import MenuItem from "../components/MenuItem";
+import MenuItem from "../../components/menu-item/MenuItem";
 import "./home-page.style.css"
+import { productCategories as products } from "./../../data/products-categories"
 
-const HomePage = (props) => {
-    const productCategories = props.productCategories;
+const HomePage = () => {
+    const productCategories = products.sections;
     return (
         <div className="home-page">
             <h1>
@@ -14,7 +15,6 @@ const HomePage = (props) => {
                         <MenuItem key={item.id} category={item} />)
                 }
             </div>
-
         </div>
     )
 }
