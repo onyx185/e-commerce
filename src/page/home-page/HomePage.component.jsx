@@ -3,6 +3,7 @@ import "./home-page.style.css"
 import { productCategories as products } from "./../../data/products-categories"
 
 const HomePage = () => {
+    
     const productCategories = products.sections;
     return (
         <div className="home-page">

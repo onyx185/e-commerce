@@ -1,4 +1,5 @@
 import "./collection-item.scss"
+import CustomButton from "../custom-button/CustomButton";
 
 const CollectionItem = (props) => {
     const product = props.product;
@@ -8,7 +9,7 @@ const CollectionItem = (props) => {
             <div className='collection-footer'>
                 <span className='name'>{product.name}</span>
                 <span className='price'>{product.price}</span>
-                <button className='custom-button'>Add to cart</button>
+                <CustomButton className="custom-button">Add to cart</CustomButton>
             </div>
         </div>
     )

@@ -11,12 +11,12 @@ const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <CrwnLogo />
+                <CrwnLogo onClick={() => handleNav(null)} />
             </div>
             <div className="options">
-                <div className="option" onClick={()=>handleNav(null)}>Home</div>
-                <div className="option" onClick={()=>handleNav('/shop')}>Shop</div>
-                <div className="option" onClick={()=>handleNav('/sign-in')}>Sign In</div>
+                <div className="option" onClick={() => handleNav(null)}>Home</div>
+                <div className="option" onClick={() => handleNav('/shop')}>Shop</div>
+                <div className="option" onClick={() => handleNav('/sign-in')}>Sign In</div>
                 <div className="option">Contact</div>
                 <CartIcon />
             </div>

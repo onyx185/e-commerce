@@ -6,16 +6,17 @@ import {
 import HomePage from './page/home-page/HomePage.component';
 import ShopPage from "./page/shop-page/ShopPage";
 import Layout from "./components/layout/layout";
+import SignIn from "./page/sign-in/SignIn";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Layout/>,
+        element: <Layout />,
         children: [
             { path: "", element: <HomePage /> },
             { path: "shop", element: <ShopPage /> },
-            { path: "shop/:title", element: <div>Shop placeholder</div>},
-            { path: "sign-in", element: <div>Sign up</div>}
+            { path: "shop/:id", element: <ShopPage /> },
+            { path: "sign-in", element: <SignIn /> }
         ]
     }
 ]);
